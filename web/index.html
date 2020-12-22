@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Envio de e-mail</title>
+	<meta charset="utf-8">
+	<style type="text/css" media="all">
+		label {
+			display: block;
+		}
+		input, textarea {
+			width: 400;
+		}
+	</style>
+</head>
+	<body class="container">
+		<h1>E-mail Sender</h1>
+		<form action="http://localhost/api" method="POST">
+			<div>
+				<label for="assunto">Assunto:</label>
+				<input name="assunto" type="text">
+			</div>
+			<div>
+				<label for="mensagem">Mensagem:</label>
+				<textarea name="mensagem" cols="50" rows="6"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Enviar">
+			</div>
+		</form>
+	</body>
+</html>
